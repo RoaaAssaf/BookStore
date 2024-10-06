@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        a{
+            font-family:Verdana, Geneva, Tahoma, sana-serif
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <style>
+        .nav-link {
+            color: #fff; 
+        }
+
+            .nav-link.active {
+                background-color: #9b59b6; 
+                color: #fff; 
+            }
+
+            .nav-link:hover {
+                background-color: #8e44ad; 
+                color: #fff; 
+            }
+    </style>
+    <nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right, #6a0dad, #a0522d);">
+        <a class="navbar-brand" href="#" style="color: #fff;"> Roaa Book Store </a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="/Genre/Add" class="nav-link" style="color: #fff;">Genre</a>
+            </li>
+            <li class="nav-item">
+                <a href="/Author/Add" class="nav-link" style="color: #fff;">Author</a>
+            </li>
+            <li class="nav-item active">
+                <a href="/Publisher/Add" class="nav-link" style="color: #fff;">Publisher</a>
+            </li>
+            <li class="nav-item">
+                <a href="/Book/Add" class="nav-link" style="color: #fff;">Book</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        @RenderBody()
+    </div>
+</body>
+</html>
